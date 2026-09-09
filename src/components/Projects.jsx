@@ -162,10 +162,10 @@ const Projects = () => {
             Featured Projects
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-6 tracking-tight">
-            Work that speaks <br className="hidden md:block" />for itself
+            Real businesses, <br className="hidden md:block" />real problems solved
           </h2>
           <p className="text-white/50 text-base md:text-lg max-w-lg font-medium leading-relaxed">
-            A selection of projects that showcase my expertise in full-stack development and modern architecture.
+            A selection of websites, platforms and AI systems I've built for real businesses — each one solving a specific problem, not just showcasing code.
           </p>
         </div>
 

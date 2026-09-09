@@ -99,38 +99,38 @@ const Services = () => {
         </div>
 
         {/* Desktop SVG Animated Dashed Line */}
-        <svg 
-          className="hidden md:block absolute top-0 left-0 w-full h-[1350px] pointer-events-none z-0" 
-          viewBox="0 0 1000 1350" 
+        <svg
+          className="hidden md:block absolute top-0 left-0 w-full h-[1350px] pointer-events-none z-0"
+          viewBox="0 0 1000 1350"
           preserveAspectRatio="none"
         >
           {/* Faint background path (optional guide) */}
-          <path 
-            d="M 650,200 C 400,300 200,400 300,600 C 400,800 750,750 700,950 C 650,1150 400,1150 300,1200" 
-            fill="none" 
-            stroke="#cbd5e1" 
-            strokeWidth="2" 
-            strokeDasharray="8 10" 
+          <path
+            d="M 650,220 C 400,320 200,420 300,650 C 400,830 750,780 700,1020"
+            fill="none"
+            stroke="#cbd5e1"
+            strokeWidth="2"
+            strokeDasharray="8 10"
           />
 
           {/* Mask to reveal the dashed path based on scroll */}
           <mask id="path-mask">
-            <motion.path 
-              d="M 650,200 C 400,300 200,400 300,600 C 400,800 750,750 700,950 C 650,1150 400,1150 300,1200" 
-              fill="none" 
-              stroke="white" 
-              strokeWidth="20" 
+            <motion.path
+              d="M 650,220 C 400,320 200,420 300,650 C 400,830 750,780 700,1020"
+              fill="none"
+              stroke="white"
+              strokeWidth="20"
               style={{ pathLength }}
             />
           </mask>
 
           {/* The actual dashed line that gets revealed */}
-          <path 
-            d="M 650,200 C 400,300 200,400 300,600 C 400,800 750,750 700,950 C 650,1150 400,1150 300,1200" 
-            fill="none" 
-            stroke="black" 
-            strokeWidth="2" 
-            strokeDasharray="8 10" 
+          <path
+            d="M 650,220 C 400,320 200,420 300,650 C 400,830 750,780 700,1020"
+            fill="none"
+            stroke="black"
+            strokeWidth="2"
+            strokeDasharray="8 10"
             mask="url(#path-mask)"
             className="drop-shadow-sm"
           />
@@ -177,12 +177,11 @@ const Services = () => {
           {skillsContent.cards.map((card, index) => {
             const positions = [
               "md:absolute md:top-[10px] md:right-[5%] lg:right-[10%] rotate-2 md:rotate-6",
-              "md:absolute md:top-[450px] md:left-[5%] lg:left-[10%] -rotate-2 md:-rotate-6",
-              "md:absolute md:top-[700px] md:right-[5%] lg:right-[15%] rotate-1 md:rotate-3",
-              "md:absolute md:top-[1050px] md:left-[15%] lg:left-[25%] -rotate-1 md:-rotate-3",
+              "md:absolute md:top-[460px] md:left-[5%] lg:left-[10%] -rotate-2 md:-rotate-6",
+              "md:absolute md:top-[900px] md:right-[5%] lg:right-[15%] rotate-1 md:rotate-3",
             ];
-            const aosTypes = ["fade-left", "fade-right", "fade-left", "fade-right"];
-            const aosDelays = ["100", "200", "300", "400"];
+            const aosTypes = ["fade-left", "fade-right", "fade-left"];
+            const aosDelays = ["100", "200", "300"];
 
             return (
               <TagCard 
@@ -200,10 +199,10 @@ const Services = () => {
           })}
 
           {/* Hand-drawn end text */}
-          <div 
-            data-aos="fade-in" 
+          <div
+            data-aos="fade-in"
             data-aos-delay="600"
-            className="hidden md:block absolute top-[1250px] left-[60%] font-['Caveat',cursive] text-3xl text-gray-600 rotate-6"
+            className="hidden md:block absolute top-[1290px] left-[45%] font-['Caveat',cursive] text-3xl text-gray-600 rotate-6"
           >
             {skillsContent.endText}
           </div>
