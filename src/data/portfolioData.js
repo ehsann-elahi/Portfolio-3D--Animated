@@ -26,7 +26,8 @@ export const socialLinks = {
 
 export const heroContent = {
   greeting: "Hi, I'm Ehsan Elahi",
-  titleHighlight: "AI Engineer that Builds, Grows & Automates Businesses With AI",
+  titleHighlight: "AI Engineer",
+  titleSub: "that Builds, Grows & Automates Businesses With AI",
   subtitle:
     "I help startups and businesses build their digital presence, grow their customer base, and automate their operations with AI — from websites and software to SEO, chatbots and intelligent automation.",
   ctaPrimary: { text: "View My Work", href: "#projects" },
